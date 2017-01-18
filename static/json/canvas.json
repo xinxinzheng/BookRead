@@ -1,0 +1,16 @@
+
+[
+	{"name":"基本用法","url":"canvas/bases","desc":"描述：<canvas>标签 ; 替换内容 ; 检查支持性 ;渲染上下文"},
+	{"name":"绘制形状","url":"canvas/draw","desc":"方法：fillRect strokeRect clearRect beginPath closePath stroke fill moveTo lineTo arc arcTo quadraticCurveTo bezierCurveTo rect"},
+	{"name":"添加样式和颜色","url":"canvas/color","desc":"fillStyle strokeStyle"},
+	{"name":"绘制文本","url":"canvas/text","desc":""},
+	{"name":"使用图片","url":"canvas/img","desc":""},
+	{"name":"变形","url":"canvas/transform","desc":""},
+	{"name":"合成与裁剪","url":"canvas/clip","desc":""},
+	{"name":"基本动画","url":"canvas/baseani","desc":""},
+	{"name":"高机动画","url":"canvas/topani","desc":""},
+	{"name":"像素操作","url":"canvas/px","desc":""},
+	{"name":"点击区域和无障碍访问","url":"canvas/area","desc":""},
+	{"name":"canvas 的优化","url":"canvas/better","desc":""},
+	{"name":"终极","url":"canvas/end","desc":""}
+]

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-10-09 14:38:45
+ * @version $Id$
+ */
+html{
+	background: #F3F3F3;
+}
+
+ h3 a{
+ 	color:#159957;
+ }
+
+ body{
+	
+ }
+ header{    
+ 	background:#333333 ;
+ 	background-image:url('../image/left.png'), url('../image/right.png');
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0 , right 0;
+ 	position: relative;
+ }
+ .site-footer{
+ 	background-color: #626262;
+ 	color:white;
+ 	padding:10px;
+ 	margin-top:0px;
+ }
+.sidemenu{
+	width:18%;
+	padding:0px;
+	background: white;
+	border-radius:10px;
+}
+ .sidemenu li{
+	list-style-type: none;
+	line-height: 50px;
+ }
+
+ .sidemenu li a{
+ 	display: inline-block;
+ 	padding-left:35px;
+ 	width:100%;
+ 	height:100%;
+ }
+
+ .sidemenu li a span{
+ 	display: inline-block;
+ 	width:100%;
+ 	height:100%;
+ }
+
+  .sidemenu li a:hover {
+ 	background-color: #15836C;
+ 	color:white;
+ }
+
+.main{
+ 	display: flex;
+ 	flex-direction:row;
+ 	flex-wrap: nowrap;	
+ 	align-items:flex-start;
+ 	justify-content: space-between;
+}
+
+ #RightBody{
+ 	width:80%;
+ 	float:right;
+ 	border-radius:10px;
+ 	background: white;
+ 	margin-top:15px;
+ 	padding:0px 15px;
+ }
+
+.book{
+	background: #333333;
+	width:350px;
+	height:200px;
+	top:105px;
+	position: absolute;
+	left:400px;
+}
+.book:after{
+	content: url('../image/people.png');
+	width:175px;
+	height:200px;
+	background-color: #F9F9F9;
+	position: absolute;
+	border-radius: 60% / 15px;
+	box-shadow:   2px 0px 0px 0px black 
+				, 4px 0px 0px 0px white 
+				, 6px 0px 0px 0px gray;
+}
+.book:before{
+	color:black;
+	content: url('../image/tag.png');
+	width:170px;
+	height:200px;
+	text-align: center;
+	background-color: #F9F9F9;
+	border-radius: 60% / 15px;
+	position: absolute;
+	left:0px;
+	box-shadow:   -2px 0px 0px 0px black 
+				, -4px 0px 0px 0px white 
+				, -6px 0px 0px 0px gray;
+}
+
+.calendar{
+	background: #333333;
+	width:250px;
+	height:200px;
+	top:105px;
+	position: absolute;
+	right:500px;
+	padding:25px;
+	border-radius: 30%/50%;
+	box-shadow:0px 0px 200px 0px #F9F9F9;
+}
+
+.calendar:after{
+	content:'';
+	width:50px;
+	height:50px;
+	background: #333333;
+	position: absolute;
+	top:-50px;
+	left:50%;
+	transform:translate(-50%); 
+	border-radius: 100% 0 100% 0 / 100% 0 100% 0;
+}
