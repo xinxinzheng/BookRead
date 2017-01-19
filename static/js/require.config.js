@@ -35,6 +35,7 @@ requirejs.config({
         textCanvas:'jsx/canvas/text-canvas',
         imgCanvas:'jsx/canvas/img-canvas',
         transformCanvas:'jsx/canvas/transform-canvas',
+        compositionCanvas:'jsx/canvas/composition-canvas',
 
         robotcss:'css/css/robot',
         tagcss:'css/css/tag',

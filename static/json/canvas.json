@@ -6,7 +6,7 @@
 	{"name":"绘制文本","url":"canvas/text","desc":""},
 	{"name":"使用图片","url":"canvas/img","desc":""},
 	{"name":"变形","url":"canvas/transform","desc":""},
-	{"name":"合成与裁剪","url":"canvas/clip","desc":""},
+	{"name":"合成与裁剪","url":"canvas/composition","desc":""},
 	{"name":"基本动画","url":"canvas/baseani","desc":""},
 	{"name":"高机动画","url":"canvas/topani","desc":""},
 	{"name":"像素操作","url":"canvas/px","desc":""},

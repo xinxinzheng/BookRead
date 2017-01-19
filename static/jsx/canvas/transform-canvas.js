@@ -60,12 +60,28 @@
       cv.scale(2,2);
       cv.rotate(Math.PI*2/4);
       cv.fillRect(0,0,50,50);
+      cv.fillStyle = '#E70012';
+      cv.rotate(Math.PI*2/1);
+      var sin = Math.sin(Math.PI/6);//0.5
+      var cos = Math.cos(Math.PI/6);//二分之一根号三
+      cv.translate(700, 100);
+      var c = 0;
+      for (var i=0; i <= 12; i++) {
+        c = Math.floor(255 / 12 * i);
+        cv.fillStyle = "rgb(" + c + "," + c + "," + c + ")";
+        cv.fillRect(0, 0, 100, 10);
+        cv.transform(cos, sin, -sin, cos, 0, 0);
+      }
+        
+      cv.setTransform(-1, 0, 0, 1, 700, 0);
+      cv.fillStyle = "rgba(255, 128, 255, 0.5)";
+      cv.fillRect(0, 50, 100, 100);
 
   		}
   	},
   	render:function(){
   		return(
-  			<canvas id="canvas" height='600px' width='1000px'>
+  			<canvas id="canvas" height='600px' width='1300px'>
   				测试
   			</canvas>
   		)

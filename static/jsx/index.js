@@ -1,9 +1,10 @@
 //主页
 ;(function(define , window){define('index',['jsx!commonlist','jsx!robot','jsx!header',
 	'jsx!sidemenu','jsx!footer','jsx!tag','jsx!btn','jsx!BasesCanvas','jsx!drawShape',
-	'jsx!styleCanvas','jsx!textCanvas','jsx!imgCanvas','jsx!transformCanvas']
+	'jsx!styleCanvas','jsx!textCanvas','jsx!imgCanvas','jsx!transformCanvas'
+	,'jsx!compositionCanvas']
 	,function(CommonList,Robot,Header,SideMenu,Footer,Tag,BtnAdd,BasesCanvas,DrawShape,
-		StyleCanvas,TextCanvas,ImgCanvas,TransformCanvas){
+		StyleCanvas,TextCanvas,ImgCanvas,TransformCanvas,CompositionCanvas){
 	
 	window.Store = window.localStorage ; 
 
@@ -64,6 +65,7 @@
 	      			<Route path = "canvas/text" component = {TextCanvas} />
 	      			<Route path = "canvas/img" component = {ImgCanvas} />
 	      			<Route path = "canvas/transform" component = {TransformCanvas} />
+	      			<Route path = "canvas/composition" component = {CompositionCanvas} />
 	    		</Route>
 	  		</Router>,
 	  	document.getElementById('mySite')
