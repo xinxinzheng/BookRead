@@ -32,10 +32,10 @@
             cv.drawImage(img2,50,10,210,180,530,75,210,180);           
         } 
         img1.onload = function(){
-          cv.drawImage(img1,450,20);        
+          cv.drawImage(img1,450,20);  
+          img2.src = 'static/image/img4.jpg';      
         }
         
-        img2.src = 'static/image/img4.jpg';
         img1.src = 'static/image/img5.jpg';    
 
         var video =  document.getElementById('myvideo'); 
