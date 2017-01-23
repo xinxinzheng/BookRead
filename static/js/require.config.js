@@ -29,6 +29,7 @@ requirejs.config({
         robot:'jsx/css/robot',
         tag:'jsx/css/tag',
         btn:'jsx/css/btn',
+
         BasesCanvas:'jsx/canvas/bases-canvas',
         drawShape:'jsx/canvas/shape-canvas',
         styleCanvas:'jsx/canvas/style-canvas',
@@ -37,9 +38,14 @@ requirejs.config({
         transformCanvas:'jsx/canvas/transform-canvas',
         compositionCanvas:'jsx/canvas/composition-canvas',
 
+        loading:"jsx/animation/loadding",
+        happy:"jsx/animation/happy",
+
         robotcss:'css/css/robot',
         tagcss:'css/css/tag',
         btncss:'css/css/btn',
+        loadding:'css/animation/loadding',
+        happycss:'css/animation/happy'
     },
     map: {
       '*': {
