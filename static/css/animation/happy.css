@@ -5,18 +5,28 @@
  * @date    2017-01-20 11:38:48
  * @version $Id$
  */
- .happy{
- 	width:1000px;
- 	height:400px;
- 	position: relative;
+ .new-year{
+	width:1000px;
+	/*height:800px;*/
+	position: relative;
+	background: #A70E11;
  }
-  .happy .happy-header{
-  	position: relative;
-  	margin:100px auto 0 auto;
+ .happy{
+ 	width:250px;
+ 	height:200px;
+ 	position: absolute;
+ }
+ .happy .happy-header{
+ 	position: absolute;
 	height:80px;
 	width:80px;
 	border-radius:50%;
 	background: linear-gradient(to top,#AB937C,#B09880,#AA937C);
+	z-index:2;
+	bottom:60px;
+	left:50%;
+	transform:translateX(-50%);
+	transition:bottom 1s 0.1s;
  }
 
  .happy .happy-header .happy-eye{
@@ -40,6 +50,7 @@
 	position:absolute;
 	top:2px;
 	left:3px;
+	transition:top 0.2s , left 0.2s;
 	background:radial-gradient(circle , #755854 0% , #755854 55% , #755854 95%);
 }
 
@@ -59,9 +70,11 @@
 	height:70px;
 	border-radius:50% 50% 0px 0px / 100% 100% 0px 0px ;
 	background:radial-gradient(circle , #755854 0% , #755854 55% , #755854 95%);
-	margin:0px auto;
-	/*position:absolute;*/
-	margin-top:-10px;
+	position:absolute;
+	bottom:0px;
+	transition:bottom 1s 0s;
+	left:50%;
+	transform:translateX(-50%);
 }
 
 .happy-mouse{
@@ -79,7 +92,7 @@
 	width:25px;
 	height:100px;
 	position: absolute;
-	top:40px;
+	top:-40px;
 	/*left:20px;*/
 	border-radius:10% 10% 0% 0% / 50% 50% 50% 50%;
 	transform:rotate(-25deg);
@@ -88,7 +101,7 @@
  }
 
  .arg-right{
- 	top:35px;
+ 	top:-35px;
  	margin-left:120px;
  	transform:rotate(25deg);
  }
@@ -135,6 +148,11 @@
 .happy-hand .f-right5{
 	height:20px;
 	top:-5px;
-	left:30px;
-	transform:rotate(45deg);
+	left:-7px;
+	transform:rotate(-45deg);
 }
+.happy .happy-header , .happy .happy-body{
+	position: absolute;
+	bottom:-1000px;
+}
+

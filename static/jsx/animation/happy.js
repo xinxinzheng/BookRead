@@ -2,80 +2,35 @@
 
   var Happy = React.createClass({
   	componentDidMount:function(){
-  		// var cv = document.getElementById('happy').getContext('2d');
-  		// cv.save();
-  		// var headerColor = cv.createLinearGradient(0,330,0,270);
-  		// headerColor.addColorStop(0,'#A9927B');
-  		// headerColor.addColorStop(1,'#AC957D');
-  		// cv.fillStyle = headerColor;
-  		// cv.save();
-  		// cv.beginPath();
-  		// cv.arc(400,300,30,0,Math.PI*2,true);
-  		// cv.closePath();
-  		// cv.fill();
-  		// var headerColor1 = cv.createRadialGradient(390,290,8,390,290,0);
-  		// headerColor1.addColorStop(0,'#F5F5F5');
-  		// headerColor1.addColorStop(1,'#FFFFFF');
-  		// cv.fillStyle = headerColor1;
-  		// cv.strokeStyle = '#C1AF9E';
-  		// cv.save();
-  		// cv.beginPath();
-  		// cv.arc(390,293,8,0,Math.PI*2,true);
-  		// cv.fill();
-  		// cv.stroke();
-  		// cv.closePath();
-  		// cv.save();
-  		// cv.beginPath();
-  		// cv.arc(410,293,8,0,Math.PI*2,true);
-  		// cv.fill();
-  		// cv.stroke();
-  		// cv.closePath();
-
-  		// cv.save();
-  		// var headerColor2 = cv.createRadialGradient(410,293,4,410,293,0);
-  		// headerColor2.addColorStop(0,'#755854');
-  		// headerColor2.addColorStop(1,'#755854');
-  		// cv.fillStyle = headerColor2;
-  		// cv.beginPath();
-  		// cv.arc(410,293,4,0,Math.PI*2,true);
-  		// cv.closePath();
-  		// cv.fill();
-
-  		// var headerColor3 = cv.createRadialGradient(410,293,4,410,293,0);
-  		// headerColor3.addColorStop(0,'#755854');
-  		// headerColor3.addColorStop(1,'#755854');
-  		// cv.fillStyle = headerColor3;
-  		// cv.beginPath();
-  		// cv.arc(390,293,4,0,Math.PI*2,true);
-  		// cv.closePath();
-  		// cv.fill();
-  		// cv.save();
-
-  		// var headerColor2 = cv.createRadialGradient(410,293,4,410,293,0);
-  		// headerColor2.addColorStop(0,'#755854');
-  		// headerColor2.addColorStop(1,'#755854');
-  		// cv.fillStyle = headerColor2;
-  		// cv.beginPath();
-  		// cv.arc(410,293,4,0,Math.PI*2,true);
-  		// cv.closePath();
-  		// cv.fill();
-
-  		// var headerColor3 = cv.createRadialGradient(410,293,4,410,293,0);
-  		// headerColor3.addColorStop(0,'#755854');
-  		// headerColor3.addColorStop(1,'#755854');
-  		// cv.fillStyle = headerColor3;
-  		// cv.beginPath();
-  		// cv.arc(390,293,4,0,Math.PI*2,true);
-  		// cv.closePath();
-  		// cv.fill();
-
+  		$(document).delegate('div.happy','mouseenter',function(){
+        $("div.happy .happy-header").css({'bottom':'60px'});
+        $("div.happy .happy-body").css({'bottom':'0px'});
+        $("div.happy happy-eye-inner").css({'top':'2px'});
+      });
+      $(document).delegate('div.happy','mouseleave',function(){
+        $("div.happy .happy-header").css({'bottom':'-1000px'});
+        $("div.happy .happy-body").css({'bottom':'-1000px'});
+        $("div.happy happy-eye-inner").css({'top':'4px'});
+      });
+      $(document).delegate('div.new-year','mouseover',function(evt){
+        var cx = evt.clientX , cy = evt.clientY  , eye = $("div.happy-eye")[0];
+        var ex = $(eye).offset().left , ey = $(eye).offset().top;
+        if(cx < ex){//左边
+           $("div.happy .happy-eye-inner").css({'left':'0px'});
+        }else{
+           $("div.happy .happy-eye-inner").css({'left':'6px'});
+        }
+        if(cy < ey){//上边
+           $("div.happy .happy-eye-inner").css({'top':'0px'});
+        }else{
+           $("div.happy .happy-eye-inner").css({'top':'6px'});
+        }
+       
+      });
   	},
   	render:function(){
   		return(
-  			<div>
-  			<canvas id = 'happy' height='100px' width='600px'>
-  				新年快乐
-  			</canvas>
+  			<div className='new-year'>
   			<div className = 'happy'>
   				<div className = 'happy-header'>
   					<div className = 'happy-eye left'>
@@ -104,10 +59,10 @@
                 <div className="finger f-right4"></div>
                 <div className="finger f-right5"></div>
               </div>
-            </div>
-  					
+            </div>					
   				</div>
   			</div>
+        <div className='line'></div>
   			</div>
   		)
   	}
