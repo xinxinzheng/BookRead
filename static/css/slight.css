@@ -14,11 +14,11 @@ html{
  }
 
  body{
-	
+	position: relative;
  }
  header{    
- 	background:#333333 ;
- 	background-image:url('../image/left.png'), url('../image/right.png');
+ 	background:linear-gradient(45deg , #A70E11 , #E6D1CC , #BFADC5 , #A097C2 , #D9BDF5) ;
+ 	/*background-image:url('../image/left.png'), url('../image/right.png');*/
  	background-repeat: no-repeat;
  	background-position: 0 0 , right 0;
  	position: relative;
@@ -64,6 +64,7 @@ html{
  	flex-wrap: nowrap;	
  	align-items:flex-start;
  	justify-content: space-between;
+ 	position: relative;
 }
 
  #RightBody{
@@ -73,6 +74,7 @@ html{
  	background: white;
  	margin-top:15px;
  	padding:0px 15px;
+ 	position: relative;
  }
 
 .book{
@@ -110,14 +112,15 @@ html{
 }
 
 .calendar{
-	background: #333333;
-	width:250px;
+	background: transparent;
+	width:200px;
 	height:200px;
 	top:105px;
 	position: absolute;
 	right:500px;
 	padding:25px;
-	border-radius: 30%/50%;
+	border-radius: 50%/50%;
+	border:1px solid white;
 	box-shadow:0px 0px 200px 0px #F9F9F9;
 }
 
