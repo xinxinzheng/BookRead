@@ -17,8 +17,7 @@ html{
 	position: relative;
  }
  header{    
- 	background:linear-gradient(45deg , #A70E11 , #E6D1CC , #BFADC5 , #A097C2 , #D9BDF5) ;
- 	/*background-image:url('../image/left.png'), url('../image/right.png');*/
+ 	background:linear-gradient(200deg , #F3DFD8 , #E6D1CC , #BFADC5 , #A097C2 , #D3C0C6) ;
  	background-repeat: no-repeat;
  	background-position: 0 0 , right 0;
  	position: relative;
@@ -78,7 +77,6 @@ html{
  }
 
 .book{
-	background: #333333;
 	width:350px;
 	height:200px;
 	top:105px;
@@ -92,7 +90,7 @@ html{
 	background-color: #F9F9F9;
 	position: absolute;
 	border-radius: 60% / 15px;
-	box-shadow:   2px 0px 0px 0px black 
+	box-shadow:   2px 0px 0px 0px #D3C0C6 
 				, 4px 0px 0px 0px white 
 				, 6px 0px 0px 0px gray;
 }
@@ -106,7 +104,7 @@ html{
 	border-radius: 60% / 15px;
 	position: absolute;
 	left:0px;
-	box-shadow:   -2px 0px 0px 0px black 
+	box-shadow:   -2px 0px 0px 0px #D3C0C6 
 				, -4px 0px 0px 0px white 
 				, -6px 0px 0px 0px gray;
 }
@@ -121,17 +119,29 @@ html{
 	padding:25px;
 	border-radius: 50%/50%;
 	border:1px solid white;
-	box-shadow:0px 0px 200px 0px #F9F9F9;
 }
 
 .calendar:after{
 	content:'';
-	width:50px;
-	height:50px;
-	background: #333333;
+	height:90px;
+	width:180px;
 	position: absolute;
-	top:-50px;
+	background: rgba(255,255,255,.5);
+	bottom:10px;
 	left:50%;
-	transform:translate(-50%); 
-	border-radius: 100% 0 100% 0 / 100% 0 100% 0;
+	transform:translateX(-50%);
+	border-radius:0 0 50% 50% / 0 0 100% 100%;
+	/*box-shadow: 0 -5px 0px 0 rgba(255,255,255,.3)*/
+}
+
+.water{
+	position: absolute;
+	top:10px;
+	left:10px;
+	width:180px;
+	height:90px;
+	background: transparent;
+}
+#path0 , #path1{
+	transition:1s;
 }
