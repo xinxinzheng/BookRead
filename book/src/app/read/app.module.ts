@@ -15,4 +15,4 @@ import { AppReadComponent } from './index';
     AppReadComponent
   ]
 })
-export class AppListModule { }
+export class AppReadModule { }

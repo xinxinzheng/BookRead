@@ -1,18 +1,15 @@
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
-import { AppReadComponent } from './index';
+import { Component , OnInit} from '@angular/core';
+import {Http} from '@angular/http';
 
-@NgModule({
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    RouterModule,
-    FormsModule,
-  ],
-  declarations: [
-    AppReadComponent
-  ]
+@Component({
+  selector: 'app-read',
+  templateUrl: './app.read.html',
+  styleUrls: ['app.read.scss']
 })
-export class AppListModule { }
+
+export class AppReadComponent implements OnInit {
+  constructor() { }
+
+  ngOnInit() {}
+
+}
