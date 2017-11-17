@@ -1,0 +1,31 @@
+.header {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background: #dddddd;
+    border-bottom: 1px solid #dddddf;
+    >h3 {
+        text-align: center;
+    }
+}
+
+.footer {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0px;
+    background: #dddddd;
+    border-top: 1px solid #dddddf;
+    width: 100%;
+    >ul {
+        li {
+            list-style: none;
+            text-align: center;
+        }
+        li:not(:last-child) {
+            // border-right: 1px solid #dddddf;
+        }
+    }
+}

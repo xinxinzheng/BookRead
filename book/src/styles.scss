@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.flex5 {
+    flex: 5;
+}
+
+.flex6 {
+    flex: 6;
+}
+
+.flex7 {
+    flex: 7;
+}
+
+.flex8 {
+    flex: 8;
+}
+
+.flex9 {
+    flex: 9;
+}
